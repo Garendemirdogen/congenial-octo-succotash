@@ -4,6 +4,7 @@ const fs = require("fs");
 
 // link to page where README.md is printed
 const generatePage = require("./utils/generateMarkdown.js");
+const { type } = require("os");
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -12,6 +13,22 @@ const questions = () => {
       type: "input",
       name: "github",
       message: "What is your Github username?",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email address?",
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "Please write a short description of your project.",
+    },
+    {
+      type: "list",
+      name: "license",
+      message: "What kind of license should your projects have?",
+      choices: ["MIT", "GNU"],
     },
   ]);
 };

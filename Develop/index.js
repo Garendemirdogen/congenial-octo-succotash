@@ -30,6 +30,22 @@ const questions = () => {
       message: "What kind of license should your projects have?",
       choices: ["MIT", "GNU"],
     },
+    {
+      type: "input",
+      name: "install",
+      message: "What are the steps required to install your project?",
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "How do you use this app?",
+    },
+    {
+      type: "input",
+      name: "contributors",
+      message:
+        "What does the user need to know about contributing to the repo?",
+    },
   ]);
 };
 // TODO: Create a function to write README file

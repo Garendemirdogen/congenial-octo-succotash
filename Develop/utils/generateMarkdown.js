@@ -16,7 +16,8 @@ const generateMarkdown = (data) => {
   ${data.contributors}
   ## Tests
   ${data.test}
-
+  ## Questions
+  If you have any questions about this projects, please contact me directly at ${data.email}. You can view more of my projects at https://github.com/${data.github}.
 `;
 };
 

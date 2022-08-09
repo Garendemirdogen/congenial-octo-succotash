@@ -10,7 +10,13 @@ const generateMarkdown = (data) => {
   ${data.install}
   ## Usage 
   ${data.usage}
- 
+  ## License 
+  This project is license under ${data.license}
+  ## Contributing 
+  ${data.contributors}
+  ## Tests
+  ${data.test}
+
 `;
 };
 

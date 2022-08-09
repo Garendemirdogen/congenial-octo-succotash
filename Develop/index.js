@@ -46,6 +46,12 @@ const questions = () => {
       message:
         "What does the user need to know about contributing to the repo?",
     },
+    {
+      type: "input",
+      name: "test",
+      message: "What command should be run to run tests?",
+      default: "npm test",
+    },
   ]);
 };
 // function to write README file using file system
@@ -62,8 +68,17 @@ const writeFile = (data) => {
   });
 };
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+// function call to initialize program
+questions()
+  // getting user answers
+  .then((answers) => {
+    return generatePage(answers);
+  })
+  // using data to display on page
+  .then((data) => {
+    return writeFile(data);
+  })
+  // catching errors
+  .catch((err) => {
+    console.log(err);
+  });

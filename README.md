@@ -28,7 +28,7 @@ SO THAT I can quickly create a professional README for a new project
 
 ## Walkthrough video
 
-<iframe src="https://drive.google.com/file/d/1_a5j3vmFBg8erUZka7bRil4lFuknOI3x/preview" width="680" height="380"></iframe>
+https://drive.google.com/file/d/1_a5j3vmFBg8erUZka7bRil4lFuknOI3x/view
 
 ## Github Repository
 

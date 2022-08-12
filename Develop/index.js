@@ -11,8 +11,13 @@ const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
+      name: "title",
+      message: "What is the title of your project?",
+    },
+    {
+      type: "input",
       name: "github",
-      message: "What is your Github username?",
+      message: "What is your GitHub username?",
     },
     {
       type: "input",
@@ -29,6 +34,7 @@ const questions = () => {
       name: "license",
       message: "What kind of license should your projects have?",
       choices: ["MIT", "GNU"],
+      default: ["MIT"],
     },
     {
       type: "input",
